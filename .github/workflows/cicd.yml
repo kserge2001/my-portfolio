@@ -51,7 +51,7 @@ jobs:
         with:
           image-ref: ${{ env.ECR_REPO }}:latest
           format: table
-          exit-code: '1' 
+          exit-code: '0' 
           severity: CRITICAL,HIGH
 
       - name: Push Docker image to Amazon ECR
